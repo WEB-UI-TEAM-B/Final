@@ -1,0 +1,56 @@
+/*----------------- Index ------------*/
+
+/*=================== MAIN NAVIGATION=============*/
+
+.mainnavigation {
+	text-align: center;
+	font-size: 20px;
+	margin: 15px;
+}
+.mainnavigation a {
+	margin: 10px;
+	color: #0D1B25;
+	padding: 10px;
+	transition-property: color;
+	transition-duration: .35s;
+	transition-timing-function: linear;
+}
+a.mainlogo {
+	font-size: 30px;
+	color: #C78509;
+	margin: 15px;
+	padding: 10px;
+}
+.mainnavigation a:hover {
+	color: #C78509;
+	text-decoration: none;
+}
+a.mainlogo:hover {
+	text-decoration: none;
+}
+/*=================== /MAIN NAVIGATION=============*/
+
+/*=================== content================*/
+.mainitem1 {
+	margin-top: 10px;
+	width: 60%;
+	display: inline-block;
+	background-image: url(../img/hotel1.jpg);
+	height: 250px;
+	float: left;
+}
+.mainitem2 {
+	width: 40%;
+	margin-top: 10px;
+	display: inline-block;
+	height: 250px;
+	background-color: #8D9B8E;
+	color: white;
+	text-align: center;
+	word-wrap: break-word;
+}
+.mainitem2 a {
+	color: white;
+}
+
+/*=================== /content ================*/
