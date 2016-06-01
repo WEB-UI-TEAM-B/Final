@@ -54,3 +54,20 @@ a.mainlogo:hover {
 }
 
 /*=================== /content ================*/
+
+/*=================== INDEX4 ================*/
+
+#map {
+	height: 300px;
+	width: 100%;
+	overflow: hidden;
+	transition: all 0.3s ease-out 0s;
+	background: #333 none repeat scroll 0% 0%;
+	position: relative;
+}
+.i4_navbar {
+	margin-bottom: 0px;
+}
+
+
+/*=================== /INDEX4 ================*/
