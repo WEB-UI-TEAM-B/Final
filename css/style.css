@@ -81,6 +81,7 @@ a.mainlogo:hover {
 .servthumbnail, .servpanel {
 	border-bottom-left-radius: 0;
 	border-bottom-right-radius: 0;
+	border-color: #DAA95F !important;
 }
 @media (min-width: 768px) {
   .mycollapse {
@@ -100,7 +101,31 @@ a.mainlogo:hover {
   .mycollapse.in {
     overflow-x: visible;
   }*/
-
+.litnavigator {
+	background-color: #2F3030 !important;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+	text-align: center;
+	border-bottom-color: #DAA95F !important;
+}
+.servpanel {
+	background-color: #2F3030 !important;
+	color: #DAA95F !important;
+}
+.panel {
+	margin-bottom: 0;
+}
+.servparagraph {
+	text-indent: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-family: 'Noto Sans', sans-serif;
+}
+.servpaneltitle {
+	font-size: 2em;
+	font-family: 'Philosopher', sans-serif;
+	
+}
 .rightnavbar
 {
 	max-width:300px;
@@ -122,17 +147,36 @@ a.mainlogo:hover {
 	padding-right: 0;
 }
 .colla {
-	border-radius: 0 !important;	
+	font-family: 'Philosopher', sans-serif;
+	border-radius: 0 !important;
+	color: #DAA95F !important;
+	text-decoration: none !important;
+}
+.blackcolla {
+	color: black !important;
+	border-radius: 0 !important;
+}
+.blackcolla:hover {
+	background-color: #2F3030 !important;
+	box-shadow: 2px 2px 6px 2px #DAA95F;
+	color: #DAA95F !important;
+	border-color: #262A29;
+	font-weight: bold;
+}
+.list-group-item {
+	font-family: 'Philosopher', sans-serif;
+	border-color: #DAA95F !important;
+	font-size: 1.2em;
+	transition: all 0.4s;
 }
 #i3menu {
-		display: block;
 		opacity:1;
     height: 150px;
     transition: all .3s ease;
     min-width: 150px;
 	}
 	.show-description {
-		display:none !important;
+		
 		opacity:0 !important;
     height: 0 !important;
     padding: 0 8px !important;
