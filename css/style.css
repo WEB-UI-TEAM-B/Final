@@ -197,28 +197,46 @@ a.mainlogo:hover {
     font-family: Sony_Sketch_EF; 
     src: url(fonts/Sony_Sketch_EF.ttf);
    }
+   .bigheader {
+   	display: none;
+   }
 .mainnavigation {
 	text-align: center;
 	font-size: 30px;
 	margin: 65px 10px 10px 10px;
 }
-.mainnavigation li {
+.mainnavigation1 {
+	font-size: 25px;
+	margin-top: 60px;
+}
+.mainnavigation1 a{
+	font-size: 25px;
+	margin: 5px;
+}
+.mainnavigation a {
 	font-family: Sony_Sketch_EF;
-	color: black;
+	color: black !important;
 	padding: 5px;
-	transition-property: color, background-color;
+	transition-property: color;
 	transition-duration: .35s;
 	transition-timing-function: linear;
 }
-.mainnavigation li:hover {
-	color: #5F5C55;
+.mainnavigation a:hover {
+	color: #995c00 !important;
 	text-decoration: none;
-	border-top: 4px solid #FFC300;
-	text-shadow: 1px 2px 2px #FFC300;
+	
+}
+.mainlogoimg1 {
+	width: 250px;
+	height:200px;
+	border-radius: 10%;
+	padding: 10px;
+	position: relative;
+	top: -50px;
 }
 .mainlogoimg {
 	width: 250px;
-	height:150px;
+	height:200px;
 	border-radius: 10%;
 	padding: 10px;
 	margin: 12px 0 0 25px;
@@ -226,6 +244,16 @@ a.mainlogo:hover {
 .navbar-default {
 	background-color: white;
 	border: none;
+}
+.logoDiv {
+	width: 320px;
+	height: 300px;
+	padding-right: 10px;
+	margin: 0 auto;
+}
+.logoDiv img {
+	width: 300px;
+	height: 300px;
 }
 /*=================== /MAIN NAVIGATION=============*/
 
@@ -238,7 +266,7 @@ a.mainlogo:hover {
 }
 .mainitem2 {
 	text-align: center;
-	background-color: rgba(141, 133, 133, 0.4);
+	background-color: #999999;
 	height: 350px;
 	color: #171100;
 	padding: 70px 0 0 0;
@@ -247,6 +275,7 @@ a.mainlogo:hover {
 }
 .mainitem2 a:hover {
 	color: white;
+	text-shadow: none;
 }
 .mainitem1 img {
 	width: 100%;
@@ -273,6 +302,15 @@ a.mainlogo:hover {
   .iteminside {
   	display: block;
   }
+  .mainlogoimg {
+  	margin-left: 140px;
+  }
+  .bigheader {
+  	display: block;
+  }
+  .smallheader {
+  	display: none;
+  }
 }
 /*=================== /content ================*/
 
@@ -286,18 +324,18 @@ a.mainlogo:hover {
 	position: relative;
 }
 .mainsocialtext {
-	color: #FFC000;
+	color: #FFC300;
 	position: absolute;
 	top:10px;
 	right: 15px;
 }
 .mainsocialtext:hover {
-	color: #FFC000;
+	color: #FFC300;
 }
 .mainfooter {
 	margin-bottom: 10px;
 	padding: 0;
-	font-size: 20px;
+	font-size: 15px;
 }
 .maincontact {
 	text-decoration: underline;
@@ -315,7 +353,7 @@ a.mainlogo:hover {
 }
 .fb:hover {
 	height: 95%;
-	border: 1px solid #FFC000;
+	border: 1px solid #FFC300;
 }
 /*=================== /social ================*/
 
