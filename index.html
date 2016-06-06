@@ -4,100 +4,205 @@
   <meta charset="utf-8">
   <title>Hotel Royal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'>
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <style>
+    #back_to_camera {
+			clear: both;
+			display: block;
+			height: 80px;
+			line-height: 40px;
+			padding: 20px;
+		}
+  </style>
+  
+  <script type='text/javascript' src='scripts/jquery.min.js'></script>
+    <script type='text/javascript' src='scripts/jquery.mobile.customized.min.js'></script>
+    <script type='text/javascript' src='scripts/jquery.easing.1.3.js'></script> 
+    <script type='text/javascript' src='scripts/camera.min.js'></script> 
+  <script>
+		jQuery(function(){
+			
+			jQuery('#camera_wrap_1').camera({
+				thumbnails: true
+			});
+
+			jQuery('#camera_wrap_2').camera({
+				height: '400px',
+				loader: 'bar',
+				pagination: false,
+				thumbnails: true
+			});
+		});
+	</script>
  </head>
  <body>
-
+     <a name="#top"></a>
+     
 <!--        HEADER          -->
     <header>
       <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>                        
-            </button>
+          <div class="container-fluid">
+            <div class="navbar-header">
+            <img src="img/logo.png" alt="logo" class="mainlogoimg"></img>
           </div>
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <nav class="mainnavigation">
-              <a href="#">Номери</a>
-              <a href="#">Бронювання</a>
-              <a href="#" title="Hotel Royal" class="mainlogo">Hotel Royal</a>
-              <a href="#">Послуги</a>
-              <a href="index4.html">Контакти</a>
-            </nav>
+          <nav class="mainnavigation">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="#">Номери</a></li>
+                <li><a href="#">Бронювання</a></li> 
+                <li><a href="#">Послуги</a></li>
+                <li><a href="#">Про нас</a></li> 
+                <li><a href="#">Новини</a></li>
+              </ul>
+          </nav>
           </div>
         </div>
     </header>
     <!-- ======== /HEADER =========== -->
 
     <!-- ======== SLIDER ============= -->
-    <div class="container-fluid">
-      <div class="row">
-      <div class="col-xs-10 col-xs-offset-1">
-        <div id="carousel-example-generic" class="carousel slide slider" data-ride="carousel">
-        <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-          </ol>
+    
+    <div>
+        <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+            <div data-thumb="../images/slides/thumbs/bridge.jpg" data-src="img/1.jpg">
+                <div class="camera_caption fadeFromBottom">
+                    <em>Готель, в якому хочеться залишитись</em>
+                </div>
+            </div>
+            <div data-thumb="../images/slides/thumbs/leaf.jpg" data-src="img/2.jpg">
+                <div class="camera_caption fadeFromBottom">
+                    <em>Неймовірні пейзажі</em>
+                </div>
+            </div>
+            <div data-thumb="../images/slides/thumbs/road.jpg" data-src="img/3.jpg">
+                <div class="camera_caption fadeFromBottom">
+                    <em>Люкс номери</em>
+                </div>
+            </div>
+            <div data-thumb="../images/slides/thumbs/sea.jpg" data-src="img/4.jpg">
+                <div class="camera_caption fadeFromBottom">
+                    <em>Відпочинкові комплекси</em>
+                </div>
+            </div>
+            <div data-thumb="../images/slides/thumbs/shelter.jpg" data-src="img/5.jpg">
+                <div class="camera_caption fadeFromBottom">
+                    <em>Справжнє задоволення</em>
+                </div>
+            </div>
+            <div data-thumb="../images/slides/thumbs/tree.jpg" data-src="img/6.jpg">
+                <div class="camera_caption fadeFromBottom">
+                    <em>Лише у нас</em>
+                </div>
+            </div>
+        </div><!-- #camera_wrap_1 -->
 
-          <!-- Обгортка для слайдів -->
-          <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              <img src="img/1.jpg" alt="hotel1">
-              <div class="carousel-caption">
-              </div>
-            </div>
-            <div class="item">
-              <img src="img/2.jpg" alt="hotel2">
-              <div class="carousel-caption">
-              </div>
-            </div>
-            <div class="item">
-              <img src="img/3.jpg" alt="hotel3">
-              <div class="carousel-caption">
-              </div>
-            </div>
-
-          </div>
-          <!-- Управління -->
-          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Попередній</span>
-          </a>
-          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Наступний</span>
-          </a>
-        </div>
-      </div>
-      </div>
-    </div>
+    	
+    </div><!-- .fluid_container -->
+    
+    <div style="clear:both; display:block; height:5px"></div>
+    
     <!-- ======== /SLIDER ============= -->
 
     <!-- ======== content ============= -->
+    <div style="clear:both; display:block; height:20px"></div>
     <section>
-
-      <div class="container-fluid">
-      <div class="row">
-          <div class="col-xs-10 col-xs-offset-1">    
-              <div class="mainitem1">
-              </div>              
-              <div class="mainitem2">
-                <h3>ROOMS</h3><br>
-                <p><a href="#"><b>Read more...</b></a></p><hr><hr>
-            </div>
-          </div>
+        <div class="container">
+    <div class="col-md-8 col-xs-12 mainitem1">
+        <div class="iteminside">
+            <h4>НОМЕРИ</h4>
+            <a href="#">Перейти...</a>
         </div>
-      </div>
-      
+        <img src="img/hotel1.jpg"></img>
+    </div>
+    <div class="col-md-3 col-md-offset-1 col-xs-12 mainitem2">
+        <h1>НОМЕРИ</h1>
+        <hr>
+        <hr>
+        <a href="#">Перейти...</a>
+    </div>
+    
+    <div class="col-md-3 col-xs-12 mainitem2">
+        <h1>БРОНЮВАННЯ</h1>
+        <hr>
+        <hr>
+        <a href="#">Перейти...</a>
+    </div>
+    <div class="col-md-8 col-md-offset-1 col-xs-12 mainitem1">
+        <div class="iteminside">
+            <h4>БРОНЮВАННЯ</HJY></h4>
+            <a href="#">Перейти...</a>
+        </div>
+        <img src="img/hotel2.jpg"</img>
+    </div>
+    
+    <div class="col-md-8 col-xs-12 mainitem1">
+        <img src="img/hotel3.jpg"</img>
+    </div>
+    <div class="col-md-3 col-md-offset-1 col-xs-12 mainitem2">
+        <h1>Готель,</h1>
+        <p> в якому хочеться залишитись</p>
+    </div>
+    
+    <div class="col-md-3 col-xs-12 mainitem2">
+        <h1>Послуги</h1>
+        <hr>
+        <hr>
+        <a href="#">Перейти...</a>
+    </div>
+    <div class="col-md-8 col-md-offset-1 col-xs-12 mainitem1">
+        <div class="iteminside">
+            <h4>ПОСЛУГИ</h4>
+            <a href="#">Перейти...</a>
+        </div>
+        <img src="img/hotel5.jpg"</img>
+    </div>
+    
+    <div class="col-md-8 col-xs-12 mainitem1">
+        <div class="iteminside">
+            <h4>ПРО НАС</h4>
+            <a href="#">Перейти...</a>
+        </div>
+        <img src="img/hotel6.jpg"</img>
+    </div>
+    <div class="col-md-3 col-md-offset-1 col-xs-12 mainitem2">
+        <h1>ПРО НАС</h1>
+        <hr>
+        <hr>
+        <a href="#">Перейти...</a>
+    </div>
+    </div>
     </section>
+    <div style="clear:both; display:block; height:5px"></div>
     <!-- ======== /content ============= -->
+    
+    <!-- ======== social ============= -->
+    
+    <section>
+        <div class="mainsocial">
+            <div class="mainsocial1">
+                <a href="https://www.facebook.com/" target="_blank"><img src="img/fb.png" class="fb"></img></a>
+                <a href="https://twitter.com//" target="_blank"><img src="img/tw.jpg" class="fb"></img></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="img/yt.png" class="fb"></img></a>
+            </div>
+        <a href="#top" class="mainsocialtext">Наверх</a>
+        </div>
+    </section>
+    <!-- ======== /social============= -->
+    
+    <!-- ======== footer============= -->
+    <footer class="mainfooter">
+        <div class="container">
+        <div class="col-xs-12">
+        <b>Team B</b> +3 (8096) 111 11 11<b>,</b> <span class="maincontact">Contact</span> us via
+        <a href="mailto:hotel.royal@hotelroyal.com?subject=hello">Email</a>
+        </div>
+        </div>
+    </footer>
+    
+    <!-- ======== /footer============= -->
 
 
 
