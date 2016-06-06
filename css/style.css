@@ -71,3 +71,76 @@ a.mainlogo:hover {
 
 
 /*=================== /INDEX4 ================*/
+
+
+
+/*----------------SERVICES.HTML STARTS HERE---------*/
+
+
+.servthumbnail, .servpanel {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+@media (min-width: 768px) {
+  .mycollapse {
+    height: auto;
+    border-top: 0;
+    box-shadow: none;
+    max-height: none;
+    padding-left:0;
+    padding-right:0;
+  }
+  /*.mycollapse.servcollapse {
+    display: block !important;
+    width: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+  }
+  .mycollapse.in {
+    overflow-x: visible;
+  }*/
+
+.rightnavbar
+{
+	max-width:300px;
+	margin-right: 0;
+	margin-left: 0px;
+}	
+
+.navbar-nav,
+.navbar-nav > li,
+.navbar-left,
+.navbar-right,
+.navbar-header {
+	float:none !important;
+	
+}
+}
+.servleftnavbar {
+	padding-left: 0;
+	padding-right: 0;
+}
+.colla {
+	border-radius: 0 !important;	
+}
+#i3menu {
+		display: block;
+		opacity:1;
+    height: 150px;
+    transition: all .3s ease;
+    min-width: 150px;
+	}
+	.show-description {
+		display:none !important;
+		opacity:0 !important;
+    height: 0 !important;
+    padding: 0 8px !important;
+    overflow: hidden !important;
+    transition: all .3s ease !important;
+    background-color: black !important;
+	}
+
+
+
+
+/*----------------SERVICES.HTML ENDS HERE-----------*/
