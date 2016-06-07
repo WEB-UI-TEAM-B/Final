@@ -609,11 +609,20 @@ li.i4_email {
 .i4_nav_background {
 	background-color: #EFEFEF;
 }
+.i4_main_nav {
+	text-align: center;
+	font-size: 30px;
+	margin: 20px;;
+}
 .i4_main_nav a {
 	font-family: Lato,sans-serif !important;
 	font-size: 20px;
 	color: #6F6F6F !important;
 	font-weight: bold;
+	margin: 15px;
+}
+.i4_main_nav a:hover {
+	text-decoration: none;
 }
 .i4_mainlogo {
 	font-size: 32px !important;
