@@ -345,12 +345,14 @@ a.mainlogo:hover {
 	font-size: 21px;
 	font-weight: bold;
 }
-.i4_location ul,li {
+.i4_adress li {
 	list-style: outside none none;
 	text-align: left;
 	margin-left: 25%;
 	padding-left: 25px;
 }
+
+
 li.i4_location {
 	background: transparent url("../img/icon-marker.png") no-repeat;
 }
