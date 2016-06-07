@@ -623,7 +623,6 @@ li.i4_email {
 }
 .i4_main_nav a:hover {
 	text-decoration: none;
-	text-shadow: 1px 1px 3px #ADADA5;
 }
 .i4_mainlogo {
 	font-size: 32px !important;
@@ -652,7 +651,15 @@ li.i4_email {
 
 /*=================== /INDEX4 ================*/
 
-/*=================== /INDEX ================*/
+/*=================== /INDEX2 ================*/
 
-
+.container1 {
+	background: #2f3238;
+	color: #fff;
+	width: 100%;
+	font-weight: 400;
+	font-size: 1,25em;
+	font-family: 'Raleway', Arial, sans-serif;
+	border: 3px solid grey;
+}
 
