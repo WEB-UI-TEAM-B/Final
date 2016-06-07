@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 </head>
 <body>
+  
+    <div class="container-fluid i4_background-color i4_body">
     <header>
       <nav class="navbar navbar-default i4_navbar">
-        <div class="container-fluid">
+        <div class="container-fluid i4_nav_background">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
               <span class="icon-bar"></span>
@@ -20,18 +23,137 @@
             </button>
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
-            <nav class="mainnavigation">
-              <a href="#">Номери</a>
-              <a href="#">Бронювання</a>
-              <a href="index.html" title="Hotel Royal" class="mainlogo">Hotel Royal</a>
-              <a href="#">Послуги</a>
-              <a href="#">Контакти</a>
+            <nav class="i4_main_nav">
+              <a href="index.html">Головна</a>
+              <a href="index2.html">Номери</a>
+              <a href="index3.html">Бронювання</a>
+              <a href="index.html" title="HOTEL ROYAL" class="mainlogo i4_mainlogo">HOTEL ROYAL</a>
+              <a href="news.html">Новини</a>
+              <a href="services.html">Послуги</a>
+              <a href="index4.html">Контакти</a>
+              
             </nav>
           </div>
         </div>
+        </nav>
     </header>
-    <div id="map"></div>
+    <div class="i4_top_nav">
+      <span>Телефони контакт-центру до Ваших послуг: 0800-501-110, 0800-501-111.</br>
+      Цілодобова онлайн-підтримка, 24/7 без перерви</span><!-- 
+      --><a href="">Залишились запитання? З'єднатися з менеджером</a>
+    </div>
+    <div class="row">
+          <div class="col-md-12 i4_contact_page">
+              <div class="triangle"></div>
+              <div class="contact"><span>НАШІ КОНТАКТИ</span></div>
+              <div class="image_overlay" style="opacity: 0.4;"></div>
+              <img src="img/contact_bg.jpg"></img>
+              
+          </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-md-8 i4_adress">
+                    <p><span>Kemeragzi Mevki Lara | Muratpasa, Анталия 07230, Туреччина</span><br><br></p>
+                    <ul>
+                      <li class="i4_location">
+                          GPS: 36.886409, 30.699376
+                      </li>
+                      <li class="i4_tel">
+                          <a href="tel:+380558171173">+8 (055) 817-11-73</a>
+                      </li>
+                      <li class="i4_fax">
+                          +8 10 90 255-23-30, +8 10 90 255-23-32
+                      </li>
+                      <li class="i4_email">
+                         <a href="mailto:info@hotel-royal.com.tr">info@hotel-royal.com.tr</a>
+                      </li>
+                    </ul>
+                    <br>
+                    <p>Готель «Royal» знаходиться в історичному центрі міста, поруч багато визначних місць, музеїв та архітектурних пам'ятників.
+                    Анталія має міжнародний аеропорт, залізничний та автобусний вокзали. 
+                    Відстань до аеропорту — 9 км, до моря — близько 500 м.</p>
+                    
+                </div>
+                
+                <div class="col-md-4">
+                    <!-- Bootstrap Accordion  -->
+                  <div class="panel-group i4_panel-group" id="accordion"  role="tablist" aria-multiselectable="true">
+                  <div class="panel panel-default i4_panel-default">
+                    <div class="panel-heading" role="tab" id="i4_headingOne">
+                      <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Головна рецепція
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                      <div class="panel-body">
+                        Для дзвінків на рецепцію:<br> +8 10 90 255-23-21<br>
+                        christchurch@hotelroyal.com
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default i4_panel-default">
+                    <div class="panel-heading" role="tab" id="i4_headingTwo">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Процедури "Royl SPA"
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                      <div class="panel-body">
+                        Для замовлення SPA-процедур:<br> +8 10 90 255-23-20<br>
+                        christchurch@hotelroyal.com
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default i4_panel-default">
+                    <div class="panel-heading" role="tab" id="i4_headingThree">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Замовлення проведення заходів
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                      <div class="panel-body">
+                        Інформація по проведенню заходів:<br> +8 10 90 255-23-17<br>
+                        christchurch@hotelroyal.com
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+              <div class="i4_depart">
+                  <p>Зв'яжіться будь ласка з нами за допомогою онлайн-форми</p>
+              </div>
+              <form id="i4_form">
+                  <div class="form-group">
+                     <input type="text" class="form-control i4_form-control" id="exampleInputPassword1" placeholder="Ім'я">
+                  </div>
+                  <div class="form-group">
+                    
+                    <input type="tel" class="form-control i4_form-control" id="exampleInputPassword1" placeholder="Номер телефону">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control i4_form-control" id="exampleInputEmail1" placeholder="Електронна пошта">
+                  </div>
+                    <div class="form-group">
+                        <textarea class="form-control i4_form-control"  rows="3" placeholder="Повідомлення"></textarea>
+                    </div>
+                  <button type="submit" class="btn btn-default i4_form-control">Надіслати</button>
+              </form>
+        </div>
+    </div>
     
+    <div class="margin-bottom-20px"></div>
+    <div id="map"></div>
     <!-- 
         <div id="disqus_thread"></div>
         <script>
@@ -46,9 +168,21 @@
         </script>
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
     -->
-    
+
+    <div class="margin-bottom-20px"></div>
+    <footer class="i4_footer">
+        <div class="i4_mainsocial1">
+                <a href="https://www.facebook.com/" target="_blank"><img src="img/fb.png" class="fb"></img></a>
+                <a href="https://twitter.com//" target="_blank"><img src="img/tw.jpg" class="fb"></img></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="img/yt.png" class="fb"></img></a>
+            </div>
+        <p>Team B +3 (8096) 111 11 11, Contact us via</p>
+        <a href="mailto:hotel.royal@hotelroyal.com?subject=hello">Email</a>
+    </footer>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script async defer  src="https://maps.googleapis.com/maps/api/js?v=3.21&key=AIzaSyCJalKgnOv4NhLV_RnSYmbqamTlnR8a7t8&callback=initMap&language=ua">    </script>
+    <script async defer  src="https://maps.googleapis.com/maps/api/js?&key=AIzaSyCJalKgnOv4NhLV_RnSYmbqamTlnR8a7t8&callback=initMap&language=ua">    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script id="dsq-count-scr" src="//hotelroyal.disqus.com/count.js" async></script>
     <script type="text/javascript" src="js/script.js"></script>
 </body>

@@ -3,6 +3,7 @@
  <head>
   <meta charset="utf-8">
   <title>Hotel Royal</title>
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'>
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -41,21 +42,60 @@
  <body>
      <a name="#top"></a>
      
+     <!-- =============HEADER ===============-->
+        <div class="container-fluid">
+    	    <header>
+    	      <nav class="  servnavbar">
+    	        <div class="container-fluid">
+    	          <div class="navbar-header">
+    	          	<div class="hidden-sm hidden-md hidden-lg visible-xs-inline-block servlogopict">
+    	              <img src="img/logo.png" style="width:150px; height:150px;"></img>
+    				</div>
+    				<div class="hidden-sm hidden-md hidden-lg visible-xs-inline-block servlogotext">Hotel Royal</div>
+    	            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+    	              <span class="icon-bar"></span>
+    	              <span class="icon-bar"></span>
+    	              <span class="icon-bar"></span>                        
+    	            </button>
+    	          </div>
+    	          <div class="collapse navbar-collapse active" id="myNavbar" >
+    	          	<div class="row">
+    	            <div class="col-md-4 text-center servmenu leftservmenu">
+    	              <a href="index.html">Головна</a>
+    	              <a href="index2.html">Номери</a>
+    	              <a href="index3.html">Бронювання</a>
+    	            </div>
+    	            <div class="col-md-4 hidden-xs text-center">
+    	            	<a href="index.html">
+    	            		<img src="img/logo.png" alt="Logo" style="width:150px; height:150px;"></img>
+                		</a>
+    	            </div>
+    	            <div class="col-md-4 text-center servmenu rightservmenu">
+    	              <a href="news.html">Новини</a>
+    	              <a href="services.html">Послуги</a>
+    	              <a href="index4.html">Контакти</a>
+    	            </div>
+    	            </div>
+    	          </div>
+    	        </div>
+    	       </nav>
+    		</header>
+        </div>
 <!--        HEADER          -->
-    <header>
+    <header class="bigheader">
       <nav class="navbar navbar-default">
           <div class="container-fluid">
             <div class="navbar-header">
-            <img src="img/logo.png" alt="logo" class="mainlogoimg"></img>
+            
           </div>
           <nav class="mainnavigation">
               <ul class="nav navbar-nav">
                 <li><a href="index.html">Головна</a></li>
-                <li><a href="#">Номери</a></li>
-                <li><a href="#">Бронювання</a></li> 
-                <li><a href="#">Послуги</a></li>
-                <li><a href="#">Про нас</a></li> 
-                <li><a href="#">Новини</a></li>
+                <li><a href="index2.html">Номери</a></li>
+                <li><a href="index3.html">Бронювання</a></li> 
+                <li><a href="news.html">Новини</a></li>
+                <li><a href="services.html">Послуги</a></li> 
+                <li><a href="index4.html">Контакти</a></li>
               </ul>
           </nav>
           </div>
@@ -109,15 +149,15 @@
     <!-- ======== content ============= -->
     <div style="clear:both; display:block; height:20px"></div>
     <section>
-        <div class="container">
-    <div class="col-md-8 col-xs-12 mainitem1">
+        <div class="container-fluid">
+    <div class="col-md-9 col-xs-12 mainitem1">
         <div class="iteminside">
             <h4>НОМЕРИ</h4>
             <a href="#">Перейти...</a>
         </div>
         <img src="img/hotel1.jpg"></img>
     </div>
-    <div class="col-md-3 col-md-offset-1 col-xs-12 mainitem2">
+    <div class="col-md-3  col-xs-12 mainitem2">
         <h1>НОМЕРИ</h1>
         <hr>
         <hr>
@@ -130,7 +170,7 @@
         <hr>
         <a href="#">Перейти...</a>
     </div>
-    <div class="col-md-8 col-md-offset-1 col-xs-12 mainitem1">
+    <div class="col-md-9 col-xs-12 mainitem1">
         <div class="iteminside">
             <h4>БРОНЮВАННЯ</HJY></h4>
             <a href="#">Перейти...</a>
@@ -138,10 +178,10 @@
         <img src="img/hotel2.jpg"</img>
     </div>
     
-    <div class="col-md-8 col-xs-12 mainitem1">
+    <div class="col-md-9 col-xs-12 mainitem1">
         <img src="img/hotel3.jpg"</img>
     </div>
-    <div class="col-md-3 col-md-offset-1 col-xs-12 mainitem2">
+    <div class="col-md-3 col-xs-12 mainitem2">
         <h1>Готель,</h1>
         <p> в якому хочеться залишитись</p>
     </div>
@@ -152,7 +192,7 @@
         <hr>
         <a href="#">Перейти...</a>
     </div>
-    <div class="col-md-8 col-md-offset-1 col-xs-12 mainitem1">
+    <div class="col-md-9 col-xs-12 mainitem1">
         <div class="iteminside">
             <h4>ПОСЛУГИ</h4>
             <a href="#">Перейти...</a>
@@ -160,14 +200,14 @@
         <img src="img/hotel5.jpg"</img>
     </div>
     
-    <div class="col-md-8 col-xs-12 mainitem1">
+    <div class="col-md-9 col-xs-12 mainitem1">
         <div class="iteminside">
             <h4>ПРО НАС</h4>
             <a href="#">Перейти...</a>
         </div>
         <img src="img/hotel6.jpg"</img>
     </div>
-    <div class="col-md-3 col-md-offset-1 col-xs-12 mainitem2">
+    <div class="col-md-3 col-xs-12 mainitem2">
         <h1>ПРО НАС</h1>
         <hr>
         <hr>
