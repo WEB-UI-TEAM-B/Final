@@ -107,6 +107,7 @@ a.mainlogo:hover {
 	border-top-left-radius: 3px;
 	text-align: center;
 	border-bottom-color: #DAA95F !important;
+	padding-bottom: 5px;
 }
 .servpanel {
 	background-color: #2F3030 !important;
