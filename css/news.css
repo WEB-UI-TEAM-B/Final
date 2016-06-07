@@ -7,18 +7,18 @@
 .panel {
     margin-bottom: 0;
 }
-p {
-  margin: 5px;
-  text-indent: 15px;
+.infirst p {
+	margin: 5px;
+	text-indent: 15px;
 	padding-left: 15px;
 	padding-right: 15px;
 	font-family: 'Noto Sans', sans-serif;
 	color: #DAA95F !important;
 }
-p:last-child {
+.infirst p:last-child {
   	margin-bottom: 20px;
 }
-p:first-child {
+.infirst p:first-child {
  padding-top: 30px;
 }
 
@@ -50,13 +50,6 @@ p:first-child {
 	color: #DAA95F !important;
 	border-color: #262A29;
 	font-weight: bold;
-}
-body {
-    background: url('img/background.jpg') no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 .infoot {
 	margin-top: 100px;
