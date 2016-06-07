@@ -623,6 +623,7 @@ li.i4_email {
 }
 .i4_main_nav a:hover {
 	text-decoration: none;
+	text-shadow: 1px 1px 3px #ADADA5;
 }
 .i4_mainlogo {
 	font-size: 32px !important;
