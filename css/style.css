@@ -206,10 +206,10 @@ a.mainlogo:hover {
 	transition: all .3s ease out;
 }
 .leftservmenu a {
-	padding: 20px;
+	padding: 10px;
 }
 .rightservmenu a {
-	padding: 20px;
+	padding: 10px;
 }
 .servnavbar {
 	background-color: rgba(48,47,47,0) !important;
