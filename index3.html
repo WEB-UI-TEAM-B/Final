@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Бронювання</title>
+	<link href="css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.theme.min.css" type="text/css"/>
+  <link href='https://fonts.googleapis.com/css?family=Philosopher&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Noto+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+  <link rel="stylesheet" type="text/css" href="css/style2.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/services.js"></script>
+</head>
+<body class="vo_body" id="vo_body">
+    <!--        HEADER          -->
+
+
+   <div class="container-fluid vo_marg">
+      <header>
+        <nav class="navbar navbar-default  servnavbar vo_marg" >
+          <div class="container-fluid vo_marg">
+            <div class="navbar-header vo_marg">
+              <div class="hidden-sm hidden-md hidden-lg visible-xs-inline-block servlogopict">
+                <img src="img/logo.png" style="width:150px; height:150px;"></img>
+        </div>
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+            </div>
+            <div class="collapse navbar-collapse active" id="myNavbar" >
+              <div class="row">
+              <div class="col-md-4 col-sm-4 text-center servmenu leftservmenu">
+                <a href="index.html">Головна</a>
+                <a href="index2.html">Номери</a>
+                <a href="index3.html">Бронювання</a>
+              </div>
+              <div class="col-md-4 col-sm-4 hidden-xs text-center">
+                <a href="index.html">
+                  <img src="img/logo.png" alt="Logo" style="width:150px; height:150px;"></img>
+                </a>
+              </div>
+              <div class="col-md-4 text-center servmenu rightservmenu">
+                <a href="news.html">Новини</a>
+                <a href="services.html">Послуги</a>
+                <a href="index4.html">Контакти</a>
+              </div>
+              </div>
+            </div>
+          </div>
+         </nav>
+    </header>
+    </div>
+
+    <!--/HEADER-->
+
+	<main class="vo_main container-fluid vo_marg">
+		<section class="col-md-12">
+			<article class="col-md-4 col-sm-5 col-xs-6 col-md-offset-7 col-sm-offset-5 col-xs-offset-2 vo_art2">
+				<form name="form" id="form">
+                <label for="vo_nomer">Виберіть номер:</label>
+                <br>
+                <select name="select" id="vo_nomer" class="vo_inp">
+                    <option value="1">Економ</option>
+                    <option value="2">Стандарт</option>
+                    <option value="3" selected>Люкс</option>
+                </select>
+                  <div class="price">
+                    <label class="l_price">Вартість проживання:</label>
+                    <label id="price" class="l_price">800</label>
+                    <label class="l_price">&#8364;</label>
+                  </div>
+               <div class="vo_helpForCheck">
+               		<input type="checkbox" id="vo_checkbox"/>
+                    <label for="vo_check" id="vo_check">Одномісне проживання:&nbsp; -&nbsp;50&#8364;&nbsp;/&nbsp;добу</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <label for="date">Дата заселення:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="day">Дні перебування:</label>
+                <br/>
+                <input type="date" id="date" class="vo_inp" min="2016-06-06" required/>
+                <input type="number" id="day" class="vo_inp" min="1" required/><br/>
+                <br/>
+                <label for="name">Прізвище Ім'я по-Батькові:</label>
+                <br/>
+                <input type="text" name="name" id="name" class="vo_input" placeholder="ПІБ"/><br/>
+                <br/>
+                <label for="email">Електронна адреса:</label>
+                <br/>
+                <input type="email" name="email" id="email" class="vo_input" placeholder=" ел. скринька"/><br/>
+                <br/> 
+                <label for="tel">Номер телефону:</label>
+                <br/>
+                <input type="tel" name="tel" id="tel" class="vo_input" placeholder="номер телефону"/><br/>
+                <br/>
+                <label for="message">Ваші побажання:</label>
+                <br/>
+                <textarea name="message" cols="25" rows="2" id="message"></textarea>
+                <br/>
+                	<div class="col-xs-offset-4">
+                	<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal" id="booking">Бронювати</button>
+                	</div>
+            </form>
+			</article>
+
+<div class="container">
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Бронювання</h4>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="col-sm-6">
+              <label class="modalWindow">ПІБ:</label><br/>
+              <label class="modalWindow">Дата заселення:</label><br/>
+              <label class="modalWindow">Тип номера:</label><br/>
+              <label class="modalWindow">Вартість номера:</label><br/>
+              <label class="modalWindow">Дні перебівуння:</label><br/>
+              <label class="modalWindow">Контактний телефон:</label><br/>
+              <label class="modalWindow">Електронна скринька:</label><br/>
+              <label class="modalWindow">Загальна вартість:</label><br/>
+            </div>
+            <div class="col-sm-6"></div>
+              <label id="modalLabel0"></label><br/>
+              <label id="modalLabel1"></label><br/>
+              <label id="modalLabel2"></label><br/>
+              <label id="modalLabel3"></label><br/>
+              <label id="modalLabel4"></label><br/>
+              <label id="modalLabel5"></label><br/>
+              <label id="modalLabel6"></label><br/>
+              <label id="modalLabel7"></label><br/>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" id="buttonOk" data-dismiss="modal">Ok</button>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </div>
+</div>
+
+	</section>
+</main>
+<!--FOOTER--> 
+    
+  <div class="container-fluid confl">
+    <section class="infoot bottom-bar">
+          <div class="mainsocial infoot">
+              <div class="mainsocial1">
+                  <a href="https://www.facebook.com/" target="_blank"><img src="img/fb.png" class="fb"></img></a>
+                  <a href="https://twitter.com//" target="_blank"><img src="img/tw.jpg" class="fb"></img></a>
+                  <a href="https://www.youtube.com/" target="_blank"><img src="img/yt.png" class="fb"></img></a>
+              </div>
+          <a href="#top" class="mainsocialtext">Наверх</a>
+          </div>
+      </section>
+    
+      <footer class="mainfooter">
+          <div class="container">
+          <div class="col-xs-12">
+          <b>Team B</b> +3 (8096) 111 11 11<b>,</b> <span class="maincontact">Contact</span> us via
+          <a href="mailto:hotel.royal@hotelroyal.com?subject=hello">Email</a>
+          </div>
+          </div>
+      </footer>
+  </div>
+  
+  
+  <!--FOOTER ENDS-->
+	<script>
+
+    
+
+		$( '#vo_nomer' ).change( function selectRoom() {
+
+				var a = document.form.select.selectedIndex;
+
+				if ( a === 0 ) {
+					$( '#vo_body' ).css( "background-image", "url(img/eco.png)" );
+          $( '#price' ).text( '400' );
+				} else if ( a === 1 ) {
+					$( '#vo_body' ).css( "background-image", "url(img/std.png)" );
+          $( '#price' ).text( '600' );
+				} else if ( a === 2 ) {
+					$( '#vo_body' ).css( "background-image", "url(img/lux.png)" );
+          $( '#price' ).text( '800' );
+				}
+ 
+		});
+
+    $( '#vo_checkbox' ).change( function check() {
+      
+        var a = $( '#price' ).text();
+        var price = a - 50;
+           
+          if ( $( 'input:checked' ).val() == 'on' ) {
+            $( '#price' ).text( price );
+          } else {
+            $( '#price' ).text( '800' );
+          }
+    
+    });
+      
+      $( '#booking' ).click( function book() {
+
+         var name = $( '#name' ).val();
+        var date = $( '#date' ).val();
+        var price = $( '#price' ).text();
+        var day = $( '#day' ).val();
+        var tel = $( '#tel' ).val();
+        var email = $( '#email' ).val();
+
+        var nameVal = document.getElementById( 'name' ).value;
+        var dateVal = document.getElementById( 'date' ).value;
+        var dayVal = document.getElementById( 'day' ).value; 
+        var emailVal = document.getElementById( 'email').value;
+        var telVal = document.getElementById( 'tel').value; 
+        
+         var reg =  /^(|(([A-Za-z0-9]+_+)|([A-Za-z0-9]+\-+)|([A-Za-z0-9]+\.+)|([A-Za-z0-9]+\++))*[A-Za-z0-9]+@((\w+\-+)|(\w+\.))*\w{1,63}\.[a-zA-Z]{2,6})$/i;
+        
+        if ( nameVal === "" ) {
+          alert( "Введіть ПІБ" );
+          return false;
+        } else if ( dateVal === "" ) {
+                  alert( "Введіть дату заселення" );
+                  return false;
+                } else if ( dayVal === "" ) {
+                          alert( "Введіть к-сть днів перебування" );
+                          return false;
+                        } else if ( telVal === "" ) {
+                                  alert( "Введіть номер телефону" );
+                                  return false;
+                                } else if ( emailVal === "" ) {
+                                          alert( "Введіть Ваш емейл" );
+                                          return false;
+                                        } else if ( !reg.test( emailVal ) ){
+                                                  alert( "Введіть Ваш емейл коректно" );
+                                                  return false;
+                                                } else {
+                                                    document.getElementById( 'form' ).reset();
+                                                      }
+        var a = $( '#price' ).text();
+          
+          if ( a == 400 || a == 350) {
+            var x = "Економ";
+          } else if ( a == 600 || a == 550 ) {
+                var x = "Стандарт";
+              } else if ( a == 800 || a == 750 ) {
+                    var x = "Люкс";
+                  }
+ 
+          if ( $( 'input:checked' ).val() == 'on' ) {
+            $( '#modalLabel5' ).text( a );
+          } else {
+            $( '#modalLabel5' ).text( a );
+          }
+
+        finalPrice = day * price;
+
+        $( '#modalLabel0' ).text( name );
+        $( '#modalLabel1' ).text( date  );
+        $( '#modalLabel2' ).text( x  );
+        $( '#modalLabel3' ).text( price  );
+        $( '#modalLabel4' ).text( day  );
+        $( '#modalLabel5' ).text( tel  );
+        $( '#modalLabel6' ).text( email  );
+        $( '#modalLabel7' ).text( finalPrice );
+      });
+
+      $( '#buttonOk' ).click( function () {
+        window.location.assign("index2.html");
+      } )
+	</script>
+</body>
+</html>
