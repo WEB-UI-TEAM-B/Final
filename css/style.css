@@ -1,3 +1,256 @@
+
+/*----------------- Index ------------*/
+
+/*=================== MAIN NAVIGATION=============*/
+
+.mainnavigation {
+	text-align: center;
+	font-size: 20px;
+	margin: 15px;
+}
+.mainnavigation a {
+	margin: 10px;
+	color: #0D1B25;
+	padding: 10px;
+	transition-property: color;
+	transition-duration: .35s;
+	transition-timing-function: linear;
+}
+a.mainlogo {
+	font-size: 30px;
+	color: #C78509;
+	margin: 15px;
+	padding: 10px;
+}
+.mainnavigation a:hover {
+	color: #C78509;
+	text-decoration: none;
+}
+a.mainlogo:hover {
+	text-decoration: none;
+}
+/*=================== /MAIN NAVIGATION=============*/
+
+/*=================== content================*/
+.mainitem1 {
+	margin-top: 10px;
+	width: 60%;
+	display: inline-block;
+	background-image: url(../img/hotel1.jpg);
+	height: 250px;
+	float: left;
+}
+.mainitem2 {
+	width: 40%;
+	margin-top: 10px;
+	display: inline-block;
+	height: 250px;
+	background-color: #8D9B8E;
+	color: white;
+	text-align: center;
+	word-wrap: break-word;
+}
+.mainitem2 a {
+	color: white;
+}
+
+/*=================== /content ================*/
+
+/*=================== INDEX4 ================*/
+
+#map {
+	height: 300px;
+	width: 100%;
+	overflow: hidden;
+	transition: all 0.3s ease-out 0s;
+	background: #333 none repeat scroll 0% 0%;
+	position: relative;
+}
+.i4_navbar {
+	margin-bottom: 0px;
+}
+
+
+/*=================== /INDEX4 ================*/
+
+
+
+/*----------------SERVICES.HTML STARTS HERE---------*/
+
+
+.servthumbnail, .servpanel {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-color: #DAA95F !important;
+}
+@media (min-width: 768px) {
+  .mycollapse {
+    height: auto;
+    border-top: 0;
+    box-shadow: none;
+    max-height: none;
+    padding-left:0;
+    padding-right:0;
+  }
+  /*.mycollapse.servcollapse {
+    display: block !important;
+    width: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+  }
+  .mycollapse.in {
+    overflow-x: visible;
+  }*/
+.litnavigator {
+	background-color: #2F3030 !important;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+	text-align: center;
+	border-bottom-color: #DAA95F !important;
+}
+.servpanel {
+	background-color: #2F3030 !important;
+	color: #DAA95F !important;
+}
+.panel {
+	margin-bottom: 0;
+}
+.servparagraph {
+	text-indent: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-family: 'Noto Sans', sans-serif;
+}
+.servpaneltitle {
+	font-size: 2em;
+	font-family: 'Philosopher', sans-serif;
+	
+}
+.rightnavbar
+{
+	max-width:300px;
+	margin-right: 0;
+	margin-left: 0px;
+}	
+
+.navbar-nav,
+.navbar-nav > li,
+.navbar-left,
+.navbar-right,
+.navbar-header {
+	float:none !important;
+	
+}
+}
+.servleftnavbar {
+	padding-left: 0;
+	padding-right: 0;
+}
+.colla {
+	font-family: 'Philosopher', sans-serif;
+	border-radius: 0 !important;
+	color: #DAA95F !important;
+	text-decoration: none !important;
+}
+.blackcolla {
+	color: black !important;
+	border-radius: 0 !important;
+}
+.blackcolla:hover {
+	background-color: #2F3030 !important;
+	box-shadow: 2px 2px 6px 2px #DAA95F;
+	color: #DAA95F !important;
+	border-color: #262A29;
+	font-weight: bold;
+}
+.list-group-item {
+	font-family: 'Philosopher', sans-serif;
+	border-color: #DAA95F !important;
+	font-size: 1.2em;
+	transition: all 0.4s;
+}
+#i3menu {
+	opacity:1;
+    height: 150px;
+    transition: all .3s ease;
+    min-width: 150px;
+	}
+.show-description {
+	opacity:0 !important;
+    height: 0 !important;
+    padding: 0 8px !important;
+    overflow: hidden !important;
+    transition: all .3s ease !important;
+    background-color: black !important;
+	}
+.infoot {
+	margin-top: 100px;
+	background-color: rgba(47,48,48,0.3) !important;
+	
+}
+.servmenu {
+	line-height: 5;
+	font-size: 1.5em;
+	border-bottom: 2px solid #DAA95F;
+	margin-bottom: 15px;
+}
+.servmenu a {
+	font-family: 'Philosopher', sans-serif; 
+	color: black;
+}
+.servmenu a:hover {
+	text-decoration: underline;
+	color: #DAA95F;
+	/*border-top: 2px solid #DAA95F*/
+	transition: all .3s ease out;
+}
+.leftservmenu a {
+	padding: 20px;
+}
+.rightservmenu a {
+	padding: 20px;
+}
+.servnavbar {
+	background-color: rgba(48,47,47,0) !important;
+}
+@media screen and (max-width: 767px) {
+   .panel {
+   	margin-bottom: 0 !important;
+   	background-color: #2F3030 !important;
+   	color: #DAA95F;
+   }
+   .litnavigator {
+	   	background-color:#2F3030 !important;
+	   	text-align: center;
+   }
+   .servparagraph {
+   		text-indent: 15px;
+   		padding: 5px 15px;
+   		
+   }
+   .servpaneltitle {
+   		font-size: 2em !important;
+   }
+}
+.servlogotext {
+	margin-top: 5px;
+	margin-left: 90px;
+	font-size: 3.5em;
+	color: #DAA95F;
+	font-family: 'Pinyon Script', cursive;
+	text-shadow: 1px 1px 2px black, 0 0 25px #DAA95F, 0 0 5px #3E2F1D;
+}
+.servlogopict {
+	margin-top: 10px;
+	margin-left: 20px;
+}
+@media screen and (max-width: 620px) {
+   .servlogotext {
+   		display: none !important;
+   }
+}
+/*----------------SERVICES.HTML ENDS HERE-----------*/
+
 /*----------------- Index ------------*/
 
 /*=================== MAIN NAVIGATION=============*/
@@ -139,6 +392,10 @@
 }
 .mainsocialtext:hover {
 	color: #FFC300;
+}
+.mainsocialtext:visited {
+	color: #DEC30F;
+	text-decoration: none;
 }
 .mainfooter {
 	margin-bottom: 10px;
@@ -383,7 +640,7 @@ a.mainlogo:hover {
 	font-size: 21px;
 	font-weight: bold;
 }
-.i4_location ul,li {
+.i4_location ul,.i4_location li {
 	list-style: outside none none;
 	text-align: left;
 	margin-left: 25%;
