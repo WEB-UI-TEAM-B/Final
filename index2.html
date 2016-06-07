@@ -1,259 +1,276 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Бронювання</title>
-	<link href="css/bootstrap.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/bootstrap.theme.min.css" type="text/css"/>
-  <link href='https://fonts.googleapis.com/css?family=Philosopher&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Noto+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
-  <link rel="stylesheet" type="text/css" href="css/style2.css">
+<!doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Hotel Royal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/set2.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/services.js"></script>
-</head>
-<body class="vo_body" id="vo_body">
-    <!--        HEADER          -->
+ </head>
+ <body>
 
-
-   <div class="container-fluid vo_marg">
-      <header>
-        <nav class="navbar navbar-default  servnavbar vo_marg" >
-          <div class="container-fluid vo_marg">
-            <div class="navbar-header vo_marg">
-              <div class="hidden-sm hidden-md hidden-lg visible-xs-inline-block servlogopict">
-                <img src="img/logo.png" style="width:150px; height:150px;"></img>
-        </div>
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>                        
-              </button>
+<!--        HEADER          -->
+   <div class="container-fluid">
+          <header>
+            <nav class="  servnavbar">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <div class="hidden-sm hidden-md hidden-lg visible-xs-inline-block servlogopict">
+                    <img src="img/logo.png" style="width:150px; height:150px;"></img>
             </div>
-            <div class="collapse navbar-collapse active" id="myNavbar" >
-              <div class="row">
-              <div class="col-md-4 col-sm-4 text-center servmenu leftservmenu">
-                <a href="index.html">Головна</a>
-                <a href="index2.html">Номери</a>
-                <a href="index3.html">Бронювання</a>
-              </div>
-              <div class="col-md-4 col-sm-4 hidden-xs text-center">
-                <a href="index.html">
-                  <img src="img/logo.png" alt="Logo" style="width:150px; height:150px;"></img>
-                </a>
-              </div>
-              <div class="col-md-4 text-center servmenu rightservmenu">
-                <a href="news.html">Новини</a>
-                <a href="services.html">Послуги</a>
-                <a href="index4.html">Контакти</a>
-              </div>
-              </div>
-            </div>
-          </div>
-         </nav>
-    </header>
-    </div>
-
-    <!--/HEADER-->
-
-	<main class="vo_main container-fluid vo_marg">
-		<section class="col-md-12">
-			<article class="col-md-4 col-sm-5 col-xs-6 col-md-offset-7 col-sm-offset-5 col-xs-offset-2 vo_art2">
-				<form name="form" id="form">
-                <label for="vo_nomer">Виберіть номер:</label>
-                <br>
-                <select name="select" id="vo_nomer" class="vo_inp">
-                    <option value="1">Економ</option>
-                    <option value="2">Стандарт</option>
-                    <option value="3" selected>Люкс</option>
-                </select>
-                  <div class="price">
-                    <label class="l_price">Вартість проживання:</label>
-                    <label id="price" class="l_price">800</label>
-                    <label class="l_price">&#8364;</label>
-                  </div>
-               <div class="vo_helpForCheck">
-               		<input type="checkbox" id="vo_checkbox"/>
-                    <label for="vo_check" id="vo_check">Одномісне проживання:&nbsp; -&nbsp;50&#8364;&nbsp;/&nbsp;добу</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="hidden-sm hidden-md hidden-lg visible-xs-inline-block servlogotext">Hotel Royal</div>
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                  </button>
                 </div>
-                <label for="date">Дата заселення:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <label for="day">Дні перебування:</label>
-                <br/>
-                <input type="date" id="date" class="vo_inp" min="2016-06-06" required/>
-                <input type="number" id="day" class="vo_inp" min="1" required/><br/>
-                <br/>
-                <label for="name">Прізвище Ім'я по-Батькові:</label>
-                <br/>
-                <input type="text" name="name" id="name" class="vo_input" placeholder="ПІБ"/><br/>
-                <br/>
-                <label for="email">Електронна адреса:</label>
-                <br/>
-                <input type="email" name="email" id="email" class="vo_input" placeholder=" ел. скринька"/><br/>
-                <br/> 
-                <label for="tel">Номер телефону:</label>
-                <br/>
-                <input type="tel" name="tel" id="tel" class="vo_input" placeholder="номер телефону"/><br/>
-                <br/>
-                <label for="message">Ваші побажання:</label>
-                <br/>
-                <textarea name="message" cols="25" rows="2" id="message"></textarea>
-                <br/>
-                	<div class="col-xs-offset-4">
-                	<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal" id="booking">Бронювати</button>
-                	</div>
-            </form>
-			</article>
-
-<div class="container">
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Бронювання</h4>
+                <div class="collapse navbar-collapse active" id="myNavbar" >
+                  <div class="row">
+                  <div class="col-md-4 text-center servmenu leftservmenu">
+                    <a href="index.html">Головна</a>
+                    <a href="index2.html">Номери</a>
+                    <a href="index3.html">Бронювання</a>
+                  </div>
+                  <div class="col-md-4 hidden-xs text-center">
+                    <a href="index.html">
+                      <img src="img/logo.png" alt="Logo" style="width:150px; height:150px;"></img>
+                    </a>
+                  </div>
+                  <div class="col-md-4 text-center servmenu rightservmenu">
+                    <a href="news.html">Новини</a>
+                    <a href="services.html">Послуги</a>
+                    <a href="index4.html">Контакти</a>
+                  </div>
+                  </div>
+                </div>
+              </div>
+             </nav>
+        </header>
         </div>
-        <div class="modal-body">
+    <!-- ======== /HEADER =========== -->
+    <!--        HEADER          -->
+    <header class="bigheader">
+      <nav class="navbar navbar-default">
           <div class="container-fluid">
-            <div class="col-sm-6">
-              <label class="modalWindow">ПІБ:</label><br/>
-              <label class="modalWindow">Дата заселення:</label><br/>
-              <label class="modalWindow">Тип номера:</label><br/>
-              <label class="modalWindow">Вартість номера:</label><br/>
-              <label class="modalWindow">Дні перебівуння:</label><br/>
-              <label class="modalWindow">Контактний телефон:</label><br/>
-              <label class="modalWindow">Електронна скринька:</label><br/>
-              <label class="modalWindow">Загальна вартість:</label><br/>
-            </div>
-            <div class="col-sm-6"></div>
-              <label id="modalLabel0"></label><br/>
-              <label id="modalLabel1"></label><br/>
-              <label id="modalLabel2"></label><br/>
-              <label id="modalLabel3"></label><br/>
-              <label id="modalLabel4"></label><br/>
-              <label id="modalLabel5"></label><br/>
-              <label id="modalLabel6"></label><br/>
-              <label id="modalLabel7"></label><br/>
+            <div class="navbar-header">
+            
+          </div>
+          <nav class="mainnavigation">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="index2.html">Номери</a></li>
+                <li><a href="index3.html">Бронювання</a></li> 
+                <li><a href="news.html">Новини</a></li>
+                <li><a href="services.html">Послуги</a></li> 
+                <li><a href="index4.html">Контакти</a></li>
+              </ul>
+          </nav>
           </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" id="buttonOk" data-dismiss="modal">Ok</button>
+    </header>
+    <!-- ======== /HEADER =========== -->
+
+    <!-- ======== SLIDER ============= -->
+   <div class="container1">
+    <div class="container">
+      <div class="row">
+      <div class="col-xs-12 col-md-12">
+        <div class="grid">
+          <figure class="effect-julia">
+            <img src="img/royal.jpg" alt="фото номера"/>
+            <figcaption>
+            <h2>HOTEL<span>ROYAL</span></h2>
+              <div>
+                <p>ХОЧЕТЕ ЗАБРОНЮВАТИ НОМЕР?</p>
+                <p>tel. +380978567283</p>
+              </div>
+            </figcaption>     
+          </figure>
         </div>
-      </div>
+            </div>
+          </div>
+            <div class="row">
+              <div class="col-xs-12 col-md-12">
+            <h2 style="text-align: center;"> Номери</h2>
+                  <p style="text-align: justify;">Якщо Вам необхідно забронювати номер в готелі, «Royal Hotel» пропонує 82 комфортабельних номери, а також апартаменти класу люкс. Елегантний дизайн, сучасне оснащення номерів створюють ідеальні умови, як для ділових, так і для туристичних поїздок. У нас Ви відчуєте атмосферу домашнього затишку.<br />
+                   Номерний фонд включає наступні категорії номерів:<br />
+                  <br>
+                  <h3 style="text-align: center;">Виберіть свій номер в готелі  Royal Hotel!</h3>
+                  <div class="row">
+                      <div class="col-xs-12 col-md-3 col-md-offset-5">
+                  <ul>
+                   <li>  Стандарт «Економ», </li>
+                   <li>  Стандарт «Класік», </li>
+                   <li>   Стандарт «Люкс»,  </li>
+                 </ul>
+                 </div>
+               </div>
+                <hr width="70%">
+                <hr>
+              
+                 <div class="row">
+                 <div class="col-xs-12 col-md-4 col-md-offset-3">
+                 <ul>
+                <li>Душова кабіна</li>
+                <li>Система клімат-контролю</li>
+                <li>Сейф</li>
+                <li>Міні-бар</li>
+                <li>Підігрів підлоги в санвузлах</li>
+                <li>Банний халат і тапочки</li>
+                </div>
+                <div class=" col-xs-12 col-md-4">
+                <li>Набір косметичних засобів</li>
+                <li>Фен</li>
+               <li>Супутникове телебачення, WiFi</li>
+               <li>Комплект рушників</li>
+               <li>Телевізор з плоским екраном</li>
+               <li>Чай кава в номері</li>
+                </ul>
+                </div>
+               </div>
+               </div>
+              <div class="col-xs-12 col-md-8 col-md-offset-2">
+                <br>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="img/econom1.jpg" alt="classic-room">
     </div>
 
+    <div class="item">
+      <img src="img/econom2.jpg" alt="room2">
     </div>
+
+    <div class="item">
+      <img src="img/econom3.jpg" alt="Flower">
+    </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<br>
+</div>
+<div class="row">
+  <div class="col-xs-12 col-md-5">
+  <h4>Стандарт «Економ»</h4>
+   </div>
+  <div class="col-xs-7 col-md-4">
+  <span> <a href="#demo" class="btn btn-default" data-toggle="collapse">Більше про номер <span class="caret"></span></a></span>
+    </div>
+    <span><a href="index3.html" class="btn btn-default" role="button">Бронювання</a></span>
+  <div class="row">
+     <div class="col-xs-12  col-md-12">
+    <div id="demo" class="collapse">
+    <br>
+   <p style="text-align: justify;">Загальна площа номера – до 20 м.кв. Максимальна кількість гостей – 2 персони. Комфортабельний однокімнатний номер з двомісним ліжком, тумбою, письмовим столом і шафою. До даної категорії відносяться 2 номери готелю (для некурців).
+  </div>
   </div>
 </div>
+  <hr>
+<div class="row">
+  <div class="col-xs-12 col-md-12">
+  <span>
+    У наc самий найкращий вигляд на сад, з вікон номерів відкривається вид на сад з екзотичними деревами. За допомогою додаткових місць всередині, можна відпочити посля проведеного дня.
+  </span>
+</div>
+</div>
+</div>
+</div>
 
-	</section>
-</main>
-	<script>
+ <div class="col-xs-12 col-md-8 col-md-offset-2">
+  <br>
+   <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="img/classic1.jpg" alt="classic-room">
+    </div>
 
+    <div class="item">
+      <img src="img/classic2.jpg" alt="room2">
+    </div>
+
+    <div class="item">
+      <img src="img/classic3.jpg" alt="Flower">
+    </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<br>
+</div>
+<div class="row">
+  <div class="col-xs-12 col-md-5">
+  <h4>Стандарт «Класік»</h4>
+   </div>
+  <div class="col-xs-7 col-md-4">
+  <span><a href="#demo1" class="btn btn-default" data-toggle="collapse">Більше про номер <span class="caret"></span></a></span>
+    </div>
+    <span><a href="index3.html" class="btn btn-default" data-toggle="collapse">Бронювання</a></span>
+  <div class="row">
+     <div class=" col-md-12">
+    <div id="demo1" class="collapse">
+    <br>
+   <p style="text-align: justify;">Загальна площа номера – до 25 м.кв. Максимальна кількість гостей – 3 персони. Комфортабельний однокімнатний номер з двомісним ліжком або двома одномісними ліжками, тумбою, письмовим столом і шафою. У даній категорії є номери для людей з обмеженими фізичними можливостями. Спеціальна пропозиція – номер «Сімейний» для комфортного розміщення всієї родини. З номера відкривається прекрасний вид на центральну частину міста. До даної категорії відносяться 74 номери (для курящих / некурящих).
+  </div>
+  </div>
+</div>
+  <hr>
+<div class="row">
+  <div class="col-xs-12 col-md-12">
+  <span>
+    В номерах є внутрішній двір, який ідеально підходить для перегляду заходу сонця з бокалом вина в руках.
+  </span>
+</div>
+</div>
+<br>
+</div>
+</div>
+</div>
+</div>
+    <section>
+        <div class="mainsocial">
+            <div class="mainsocial1">
+                <a href="https://www.facebook.com/" target="_blank"><img src="img/fb.png" class="fb"></img></a>
+                <a href="https://twitter.com//" target="_blank"><img src="img/tw.jpg" class="fb"></img></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="img/yt.png" class="fb"></img></a>
+            </div>
+        <a href="#top" class="mainsocialtext">Наверх</a>
+        </div>
+      </div>
+    </section>
+    <!-- ======== /social============= -->
+     <!-- ======== footer============= -->
+    <footer class="mainfooter">
+        <div class="container">
+        <div class="col-xs-12">
+        <b>Team B</b> +3 (8096) 111 11 11<b>,</b> <span class="maincontact">Contact</span> us via
+        <a href="mailto:hotel.royal@hotelroyal.com?subject=hello">Email</a>
+        </div>
+        </div>
+    </footer>
     
+    <!-- ======== /footer============= -->
 
-		$( '#vo_nomer' ).change( function selectRoom() {
-
-				var a = document.form.select.selectedIndex;
-
-				if ( a === 0 ) {
-					$( '#vo_body' ).css( "background-image", "url(img/eco.png)" );
-          $( '#price' ).text( '400' );
-				} else if ( a === 1 ) {
-					$( '#vo_body' ).css( "background-image", "url(img/std.png)" );
-          $( '#price' ).text( '600' );
-				} else if ( a === 2 ) {
-					$( '#vo_body' ).css( "background-image", "url(img/lux.png)" );
-          $( '#price' ).text( '800' );
-				}
- 
-		});
-
-    $( '#vo_checkbox' ).change( function check() {
-      
-        var a = $( '#price' ).text();
-        var price = a - 50;
-           
-          if ( $( 'input:checked' ).val() == 'on' ) {
-            $( '#price' ).text( price );
-          } else {
-            $( '#price' ).text( '800' );
-          }
-    
-    });
-      
-      $( '#booking' ).click( function book() {
-
-         var name = $( '#name' ).val();
-        var date = $( '#date' ).val();
-        var price = $( '#price' ).text();
-        var day = $( '#day' ).val();
-        var tel = $( '#tel' ).val();
-        var email = $( '#email' ).val();
-
-        var nameVal = document.getElementById( 'name' ).value;
-        var dateVal = document.getElementById( 'date' ).value;
-        var dayVal = document.getElementById( 'day' ).value; 
-        var emailVal = document.getElementById( 'email').value;
-        var telVal = document.getElementById( 'tel').value; 
-        
-         var reg =  /^(|(([A-Za-z0-9]+_+)|([A-Za-z0-9]+\-+)|([A-Za-z0-9]+\.+)|([A-Za-z0-9]+\++))*[A-Za-z0-9]+@((\w+\-+)|(\w+\.))*\w{1,63}\.[a-zA-Z]{2,6})$/i;
-        
-        if ( nameVal === "" ) {
-          alert( "Введіть ПІБ" );
-          return false;
-        } else if ( dateVal === "" ) {
-                  alert( "Введіть дату заселення" );
-                  return false;
-                } else if ( dayVal === "" ) {
-                          alert( "Введіть к-сть днів перебування" );
-                          return false;
-                        } else if ( telVal === "" ) {
-                                  alert( "Введіть номер телефону" );
-                                  return false;
-                                } else if ( emailVal === "" ) {
-                                          alert( "Введіть Ваш емейл" );
-                                          return false;
-                                        } else if ( !reg.test( emailVal ) ){
-                                                  alert( "Введіть Ваш емейл коректно" );
-                                                  return false;
-                                                } else {
-                                                    document.getElementById( 'form' ).reset();
-                                                      }
-        var a = $( '#price' ).text();
-          
-          if ( a == 400 || a == 350) {
-            var x = "Економ";
-          } else if ( a == 600 || a == 550 ) {
-                var x = "Стандарт";
-              } else if ( a == 800 || a == 750 ) {
-                    var x = "Люкс";
-                  }
- 
-          if ( $( 'input:checked' ).val() == 'on' ) {
-            $( '#modalLabel5' ).text( a );
-          } else {
-            $( '#modalLabel5' ).text( a );
-          }
-
-        finalPrice = day * price;
-
-        $( '#modalLabel0' ).text( name );
-        $( '#modalLabel1' ).text( date  );
-        $( '#modalLabel2' ).text( x  );
-        $( '#modalLabel3' ).text( price  );
-        $( '#modalLabel4' ).text( day  );
-        $( '#modalLabel5' ).text( tel  );
-        $( '#modalLabel6' ).text( email  );
-        $( '#modalLabel7' ).text( finalPrice );
-      });
-
-      $( '#buttonOk' ).click( function () {
-        window.location.assign("index2.html");
-      } )
-	</script>
-</body>
+  <script src="js/bootstrap.min.js"></script>
+</div>
+ </body>
 </html>
