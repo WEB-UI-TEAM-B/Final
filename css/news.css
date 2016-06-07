@@ -58,3 +58,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
+.infoot {
+	margin-top: 100px;
+	background-color: rgba(47,48,48,0.3) !important;
+}

@@ -18,27 +18,40 @@
 </head>
 <body id="i3pool" style="background: url('img/background.jpg') no-repeat center center fixed;">
     <div class="container-fluid">
-        <header>
-          <nav class="navbar navbar-default">
-            <div class="container-fluid">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>                        
-                </button>
+	    <header>
+	      <nav class="navbar navbar-default  servnavbar">
+	        <div class="container-fluid">
+	          <div class="navbar-header">
+	            <div class="hidden-sm hidden-md hidden-lg visible-xs-inline-block servlogopict">
+	              <img src="img/logo.png" style="width:150px; height:150px;"></img>
               </div>
-              <div class="collapse navbar-collapse" id="myNavbar">
-                <nav class="mainnavigation">
-                  <a href="#">Номери</a>
-                  <a href="#">Бронювання</a>
-                  <a href="#" title="Hotel Royal" class="mainlogo">Hotel Royal</a>
-                  <a href="#">Послуги</a>
-                  <a href="#">Про нас</a>
-                </nav>
-              </div>
-            </div>
-        </header>
+              <div class="hidden-sm hidden-md hidden-lg visible-xs-inline-block servlogotext">Hotel Royal</div>
+	            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	              <span class="icon-bar"></span>
+	              <span class="icon-bar"></span>
+	              <span class="icon-bar"></span>                        
+	            </button>
+	          </div>
+	          <div class="collapse navbar-collapse active" id="myNavbar" >
+	          	<div class="row">
+	            <div class="col-md-4 text-center servmenu leftservmenu">
+	              <a href="#">Головна</a>
+	              <a href="#">Номери</a>
+	              <a href="#">Бронювання</a>
+	            </div>
+	            <div class="col-md-4 hidden-xs text-center">
+	            	<img src="img/logo.png" style="width:150px; height:150px;"></img>
+	            </div>
+	            <div class="col-md-4 text-center servmenu rightservmenu">
+	              <a href="#">Новини</a>
+	              <a href="#">Послуги</a>
+	              <a href="#">Контакти</a>
+	            </div>
+	            </div>
+	          </div>
+	        </div>
+	       </nav>
+		</header>
     </div>
     <div class="container-fluid">
     	<aside id="in1menu" class="col-xs-12 col-sm-12 col-md-4">
@@ -112,25 +125,30 @@
     				</div>
     		    </article>
     		</div>
-    	</section>       
-        <footer class="col-xs-12 col-md-12 in1foot">
-        	<nav class="navbar innavf" role="navigation">
-                <h4>
-                <a href="index1.html">Номери</a>
-                <a href="index2.html">Бронювання</a>
-                <a href="news1.html">Новини</a>
-                <a href="index3.html">Додаткові послуги</a>
-                <a href="index4.html">Контакти та відгуки</a>
-                </h4>
-                <a href="https://www.facebook.com/" class="facebook i4_social"  target=_blank>f</a>
-                <a href="https://twitter.com" class="twitter i4_social"  target=_blank>t</a>
-                <a href="https://plus.google.com/" class="google i4_social"  target=_blank>g+</a>
-            </nav>
-            <small class="footer">© All rights reserved. Team-B.м.Івано-Франківськ 2016</small>
-        </footer>
-    </div>
-
-    </div>
+    	</section>   
+    	</div>
+    	<div class="container-fluid">
+    		<section class="infoot">
+    	        <div class="mainsocial infoot">
+    	            <div class="mainsocial1">
+    	                <a href="https://www.facebook.com/" target="_blank"><img src="img/fb.png" class="fb"></img></a>
+    	                <a href="https://twitter.com//" target="_blank"><img src="img/tw.jpg" class="fb"></img></a>
+    	                <a href="https://www.youtube.com/" target="_blank"><img src="img/yt.png" class="fb"></img></a>
+    	            </div>
+    	        <a href="#top" class="mainsocialtext">Наверх</a>
+    	        </div>
+    	    </section>
+    		
+    	    <footer class="mainfooter">
+    	        <div class="container">
+    	        <div class="col-xs-12">
+    	        <b>Team B</b> +3 (8096) 111 11 11<b>,</b> <span class="maincontact">Contact</span> us via
+    	        <a href="mailto:hotel.royal@hotelroyal.com?subject=hello">Email</a>
+    	        </div>
+    	        </div>
+    	    </footer>
+    	</div>
+    	
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>

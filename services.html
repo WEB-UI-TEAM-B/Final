@@ -6,6 +6,7 @@
     <title>Royal Hotel</title>
     <link href='https://fonts.googleapis.com/css?family=Philosopher&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Noto+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="css/bootstrap.themes.csststrap" type="text/css" />
@@ -15,31 +16,43 @@
     <link rel="stylesheet" href="css/services.css" type="text/css" />
     <script type="text/javascript" src="js/services.js"></script>
 </head>
-<body id="i3pool">
+<body id="i3pool" style="background: url('img/background.jpg') no-repeat center center fixed;">
     <!--        HEADER          -->
     <div class="container-fluid">
-    <header>
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>                        
-            </button>
-          </div>
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <nav class="mainnavigation">
-              <a href="#">Номери</a>
-              <a href="#">Бронювання</a>
-              <a href="#" title="Hotel Royal" class="mainlogo">Hotel Royal</a>
-              <a href="#">Послуги</a>
-              <a href="#">Про нас</a>
-            </nav>
-          </div>
-        </div>
-       </nav>
-	</header>
+	    <header>
+	      <nav class="navbar navbar-default  servnavbar">
+	        <div class="container-fluid">
+	          <div class="navbar-header">
+	          	<div class="hidden-sm hidden-md hidden-lg visible-xs-inline-block servlogopict">
+	              <img src="img/logo.png" style="width:150px; height:150px;"></img>
+				</div>
+				<div class="hidden-sm hidden-md hidden-lg visible-xs-inline-block servlogotext">Hotel Royal</div>
+	            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	              <span class="icon-bar"></span>
+	              <span class="icon-bar"></span>
+	              <span class="icon-bar"></span>                        
+	            </button>
+	          </div>
+	          <div class="collapse navbar-collapse active" id="myNavbar" >
+	          	<div class="row">
+	            <div class="col-md-4 text-center servmenu leftservmenu">
+	              <a href="#">Головна</a>
+	              <a href="#">Номери</a>
+	              <a href="#">Бронювання</a>
+	            </div>
+	            <div class="col-md-4 hidden-xs text-center">
+	            	<img src="img/logo.png" style="width:150px; height:150px;"></img>
+	            </div>
+	            <div class="col-md-4 text-center servmenu rightservmenu">
+	              <a href="#">Новини</a>
+	              <a href="#">Послуги</a>
+	              <a href="#">Контакти</a>
+	            </div>
+	            </div>
+	          </div>
+	        </div>
+	       </nav>
+		</header>
     </div>
     
     <!--Plugin starts-->
@@ -95,7 +108,7 @@
 			</nav>
 		</aside>
 		
-		<section id="i3sec" class="col-xs-12 col-sm-10 col-md-10">
+		<section id="i3sec" class="col-xs-12 col-sm-12 col-md-10">
 			
 			<div id="accordion" role="tablist" aria-multiselectable="true">
 			  <div class="panel panel-default servpanel">
@@ -178,8 +191,12 @@
 			    </div>
 			    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 			      <div class="i3first">
-							<img src="img/restoran.jpg" alt="Restaurant" style="margin:0 auto; width:404px; height:206px;"/>
-							<img src="img/terra.jpg" alt="Restaurant" style="margin:0 auto; width:404px; height:206px;"/>
+							<div class="col-xs-12 col-md-6">
+								<img src="img/restoran.jpg" alt="Restaurant" class="img-responsive" style="margin:10px auto; width:404px; height:206px;"/>
+							</div>
+							<div class="col-xs-12 col-md-6">
+								<img src="img/terra.jpg" alt="Restaurant" class="img-responsive" style="margin:10px auto; width:404px; height:206px;"/>
+							</div>
 							<p class="servparagraph" >В нашому новому ресторані, Вас завжди радісно зустрінуть	і з задоволенням нагодують.
 							Тут комфортно і престижно, і в той же час демократично і по-домашньому
 							затишно. В ресторані Вас завжди чекає свіже бочкове пиво відомих виробників, а також пиво власного 
@@ -201,9 +218,13 @@
 			        </a>
 			    </div>
 			    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-			      <div class="i3first">
-							<img src="img/kids1.jpg" alt="Сhildren's party" style="margin:0 auto; width:404px; height:206px;"/>
-							<img src="img/kids2.jpg" alt="Сhildren's party" style="margin:0 auto; width:404px; height:206px;"/>
+					<div class="i3first">
+			      		<div class="col-xs-12 col-md-6">
+							<img src="img/kids1.jpg" alt="Сhildren's party" class="img-responsive" style="margin:10px auto; width:404px; height:206px;"/>
+						</div>
+						<div class="col-xs-12 col-md-6">
+							<img src="img/kids2.jpg" alt="Сhildren's party" class="img-responsive" style="margin:10px auto; width:404px; height:206px;"/>
+						</div>
 							<p class="servparagraph" >Активні розваги для дітей і затишний відпочинок для батьків пропонує наша дитяча кімната.
 							Наші висококваліфіковані аніматори проводять різноманітні конкурси, ігри для дітей, настільні
 							дитячі ігри типу "Monopoly" та "Mafia", які розвивають розумові, математичні, дедуктивні методи
@@ -216,7 +237,7 @@
 							ігрової кімнати облаштована телевізором, на якому можна переглянути	мультики. В третій частині ігрової 
 							кімнати знаходиться приміщення з безкоштовними ігровими апаратами, а також з безкоштовним стендом
 							віртуальної реальності "Oculus rift"</p>
-						</div>
+			    	</div>
 			    </div>
 			  </div>
 			  <div class="panel panel-default servpanel">
@@ -252,22 +273,26 @@
 		</section>
 		</div>
 		<div class="clearfix"></div>
-	    <footer class="i3foot col-xs-12 col-sm-12 col-md-12">
-	    	<nav>
-	            <h4>
-	            <a href="index1.html">Номери</a>
-	            <a href="index2.html">Бронювання</a>
-	            <a href="news1.html">Новини</a>
-	            <a href="index3.html">Додаткові послуги</a>
-	            <a href="index4.html">Контакти та відгуки</a>
-	            </h4>
-	            <div id="i3soc">
-	            <a href="https://www.facebook.com/" class="facebook i4_social"  target=_blank>f</a>
-	            <a href="https://twitter.com" class="twitter i4_social"  target=_blank>t</a>
-	            <a href="https://plus.google.com/" class="google i4_social"  target=_blank>g+</a>
+		
+	<div class="container-fluid">
+		<section class="infoot bottom-bar">
+	        <div class="mainsocial infoot">
+	            <div class="mainsocial1">
+	                <a href="https://www.facebook.com/" target="_blank"><img src="img/fb.png" class="fb"></img></a>
+	                <a href="https://twitter.com//" target="_blank"><img src="img/tw.jpg" class="fb"></img></a>
+	                <a href="https://www.youtube.com/" target="_blank"><img src="img/yt.png" class="fb"></img></a>
 	            </div>
-	        </nav>
-	        <span class="i3span"><small class="footer">© All rights reserved. Team-B.м.Івано-Франківськ 2016</small></span>
+	        <a href="#top" class="mainsocialtext">Наверх</a>
+	        </div>
+	    </section>
+		
+	    <footer class="mainfooter">
+	        <div class="container">
+	        <div class="col-xs-12">
+	        <b>Team B</b> +3 (8096) 111 11 11<b>,</b> <span class="maincontact">Contact</span> us via
+	        <a href="mailto:hotel.royal@hotelroyal.com?subject=hello">Email</a>
+	        </div>
+	        </div>
 	    </footer>
 	</div>
 	
