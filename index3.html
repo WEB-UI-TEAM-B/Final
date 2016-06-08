@@ -202,12 +202,21 @@
       
         var a = $( '#price' ).text();
         var price = a - 50;
-           
-          if ( $( 'input:checked' ).val() == 'on' ) {
-            $( '#price' ).text( price );
-          } else {
-            $( '#price' ).text( '800' );
-          }
+        if ( a == 800 || $( 'input:checked' ).val() == 'on' ) {
+                $( '#price' ).text( price );
+              } else {
+                $( '#price' ).text( "800" );
+              }
+        if ( a == 600 || $( 'input:checked' ).val() == 'on' ) {
+                $( '#price' ).text( price );
+              } else {
+                $( '#price' ).text( "600" );
+              }
+        if ( a == 400 || $( 'input:checked' ).val() == 'on' ) {
+                $( '#price' ).text( price );
+              } else {
+                $( '#price' ).text( "400" );
+              }
     
     });
       
@@ -219,31 +228,25 @@
         var day = $( '#day' ).val();
         var tel = $( '#tel' ).val();
         var email = $( '#email' ).val();
-
-        var nameVal = document.getElementById( 'name' ).value;
-        var dateVal = document.getElementById( 'date' ).value;
-        var dayVal = document.getElementById( 'day' ).value; 
-        var emailVal = document.getElementById( 'email').value;
-        var telVal = document.getElementById( 'tel').value; 
         
-         var reg =  /^(|(([A-Za-z0-9]+_+)|([A-Za-z0-9]+\-+)|([A-Za-z0-9]+\.+)|([A-Za-z0-9]+\++))*[A-Za-z0-9]+@((\w+\-+)|(\w+\.))*\w{1,63}\.[a-zA-Z]{2,6})$/i;
+        var reg =  /^(|(([A-Za-z0-9]+_+)|([A-Za-z0-9]+\-+)|([A-Za-z0-9]+\.+)|([A-Za-z0-9]+\++))*[A-Za-z0-9]+@((\w+\-+)|(\w+\.))*\w{1,63}\.[a-zA-Z]{2,6})$/i;
         
-        if ( nameVal === "" ) {
-          alert( "Введіть ПІБ" );
+        if ( name === "" ) {
+          alert( "Введіть Ваше Прізвище та Ім'я" );
           return false;
-        } else if ( dateVal === "" ) {
+        } else if ( date === "" ) {
                   alert( "Введіть дату заселення" );
                   return false;
-                } else if ( dayVal === "" ) {
+                } else if ( day === "" ) {
                           alert( "Введіть к-сть днів перебування" );
                           return false;
-                        } else if ( telVal === "" ) {
+                        } else if ( tel === "" ) {
                                   alert( "Введіть номер телефону" );
                                   return false;
-                                } else if ( emailVal === "" ) {
+                                } else if ( email === "" ) {
                                           alert( "Введіть Ваш емейл" );
                                           return false;
-                                        } else if ( !reg.test( emailVal ) ){
+                                        } else if ( !reg.test( email ) ){
                                                   alert( "Введіть Ваш емейл коректно" );
                                                   return false;
                                                 } else {
@@ -258,13 +261,7 @@
               } else if ( a == 800 || a == 750 ) {
                     var x = "Люкс";
                   }
- 
-          if ( $( 'input:checked' ).val() == 'on' ) {
-            $( '#modalLabel5' ).text( a );
-          } else {
-            $( '#modalLabel5' ).text( a );
-          }
-
+    
         finalPrice = day * price;
 
         $( '#modalLabel0' ).text( name );
