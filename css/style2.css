@@ -29,7 +29,7 @@
 }
 .vo_art2 {
 	min-width: 400px;
-	height: 850px;
+	height: 680px;
 	background: rgba( 177, 169, 169, 0.7 );
 }
 .price {
@@ -50,8 +50,7 @@
 .vo_art2 form label {
   color: #3E2F1E;
   font-weight: bold;
-  margin: 10px 10px;
-  margin-bottom: 8px;
+  margin: 5px 10px 0 10px;
 }
 .vo_art2 form input, .vo_art2 form #message, .vo_art2 form select {
   font-size: 1.5em;
@@ -73,6 +72,7 @@
 .vo_input {
   width: 70%;
   border-radius: 5px;
+  margin-bottom: 0 !important;
 }
 #day{
   width: 15%;
@@ -94,6 +94,15 @@
   position: relative;
   top: 12px;
   width: 4%;
+}
+.star {
+  padding: 0;
+  margin: 0 -5px !important;
+  color: darkred !important;
+}
+.legend {
+  margin: -15px 0 10px 10px!important;
+  font-size: 0.8em;
 }
 .modal-footer a {
   text-decoration: none;
@@ -225,3 +234,10 @@
   padding: 0;
 }
 /*=================== /social ================*/
+
+.vo_error {
+  border: 1px solid #DB5651 !important;
+}
+.vo_error::-webkit-input-placeholder {
+    color: #DB5651;
+}
